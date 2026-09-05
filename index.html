@@ -1,1 +1,80 @@
-<!DOCTYPE html> <html lang="az"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Nicat Hacıyev</title> <link rel="stylesheet" href="style.css"> </head> <body> <header> <h1>Nicat Hacıyev</h1> <p>Fizika • Robotika • Elektronika</p> </header> <main> <section> <h2>Haqqımda</h2> <p> Bu sayt mənim fizika, robotika və elektronika sahəsində yazılarımı, layihələrimi və dərslərimi paylaşdığım şəxsi bloqdur. </p> </section> <section> <h2>Son yazılar</h2> <ul> <li><a href="#">Arduino ilə ilk robot</a></li> <li><a href="#">PID nəzarəti nədir?</a></li> <li><a href="#">Fizikada enerji anlayışı</a></li> </ul> </section> <button id="themeBtn">Rəngi dəyiş</button> </main> <footer> <p>© 2026 Nicat Hacıyev</p> </footer> <script src="script.js"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Mənim Şəxsi Bloqum</title>
+    <style>
+        /* Səhifənin əsas strukturu: sol menyu və sağ məzmun üçün yan-yana düzülüş */
+        body {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Sol tərəfdəki naviqasiya menyusu və şaquli xətt */
+        nav {
+            width: 250px;
+            padding-right: 30px;
+            border-right: 1px solid #000; /* Şaquli xətt qalır */
+            margin-right: 30px;
+        }
+
+        /* Sağ tərəfdəki əsas məzmun zonası */
+        main {
+            flex: 1;
+        }
+
+        /* Menyudakı keçidlərin görünüşü */
+        nav ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        nav li {
+            margin-bottom: 8px;
+        }
+
+        /* Şəkillərin ölçü məhdudiyyəti və mərkəzləşdirilməsi */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sol tərəfdəki menyu paneli (ayrı səhifələrə keçidlərlə) -->
+    <nav>
+        <h2>Mündəricat</h2>
+        <p>Yazılarım:</p>
+        <ul>
+            <li><a href="yazi1.html">Birinci Yazı</a></li>
+            <li><a href="yazi2.html">İkinci Yazı</a></li>
+            <li><a href="haqqimda.html">Haqqımda</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sağ tərəfdəki əsas məzmun zonası -->
+    <main>
+    <section>
+        <h1>Nicat Hacıyev</h1>
+        <p>Salam, mən Nicat. Elektronika mühəndisliyi ixtisası üzrə bakalavr və magistr pillələrini bitirmişəm. Müxtəlif kurslarda robototexnika dərsləri tədris edir, gənclərə və şagirdlərə bu sahədə mentorluq xidməti göstərirəm. O cümlədən, fəaliyyətimi Xəzər Universitetində fizika və elektronika müəllimi kimi də davam etdirirəm.</p>
+        
+        <p>Bu sayt — fizika, robototexnika və elektronika sahələrindəki araşdırmalarımı, layihələrimi və tədris qeydlərimi paylaşdığım şəxsi bloqumdur. Dayanmadan öyrənməyi, yeniliklər yaratmağı və bildiklərimi bölüşməyi sevirəm.</p>
+        
+        <p>Mənimlə əlaqə saxlamaq üçün: <a href="mailto:hajieffnicat@gmail.com">hajieffnicat@gmail.com</a></p>
+        
+        <blockquote style="margin-top: 30px; font-style: italic;">
+            "Elm ağılın çırağıdır." <br>
+            <span style="font-size: 0.9em; font-style: normal;">— Atalar sözü</span>
+        </blockquote>
+    </section>
+</main>
+
+</body>
+</html>
