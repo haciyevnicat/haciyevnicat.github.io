@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>PID nədir? | Nicatın Bloqu</title> //BIRINCI BURANI DƏYİŞ
+    <style>
+        /* Səhifənin əsas strukturu: sol menyu və sağ məzmun üçün yan-yana düzülüş */
+        body {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Sol tərəfdəki naviqasiya menyusu və şaquli xətt */
+        nav {
+            width: 250px;
+            padding-right: 30px;
+            border-right: 1px solid #000; /* Şaquli xətt */
+            margin-right: 30px;
+        }
+
+        /* Sağ tərəfdəki əsas məzmun zonası */
+        main {
+            flex: 1;
+        }
+
+        /* Menyudakı keçidlərin görünüşü */
+        nav ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        nav li {
+            margin-bottom: 8px;
+        }
+
+        /* Şəkillərin ölçü məhdudiyyəti */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Videonun səhifədə səliqəli və mütənasib görünməsi üçün qutu */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 nisbəti üçün standart hündürlük */
+            height: 0;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sol tərəfdəki menyu paneli (ayrı səhifələrə keçidlərlə) -->
+    <nav>
+        <h2>Nicatın Blogu</h2>
+        <p>Yazılarım:</p>
+        <ul>
+            <li>Digər yazıları görmək üçün <a href="index.html">əsas səhifə</a>yə keçid edin.</li>
+        </ul>
+    </nav>
+
+    <!-- Sağ tərəfdəki əsas məzmun zonası -->
+    <main>
+        <section>
+            <h1>PID nədir?</h1> //
+            <p>
+                PID idarəetmə sistemlərində geniş istifadə olunan bir nəzarət alqoritmidir. Açılışı Proportional Integral Derivative sözlərindən gəlir. Bu alqoritm sistemdə yaranan səhvi ölçərək onu minimuma endirməyə çalışır və sistemi sabit vəziyyətdə saxlamağa kömək edir.
+                Sadə şəkildə desək, PID istənilən dəyər ilə real vəziyyət arasındakı fərqi hesablayır və bu fərqə əsasən çıxış siqnalı formalaşdırır. 
+                Proportional hissə mövcud səhvə reaksiya verir. 
+                Integral hissə zaman ərzində yığılan səhvləri nəzərə alır. 
+                Derivative hissə isə səhvin dəyişmə sürətini izləyərək sistemi daha stabil edir.
+                Aşağıdakı videoda isə PID controller ilə balancing ball qurğusu hazırlamışam. Qurğuda bir top platforma üzərində saxlanılır və məqsəd topu mərkəzdə balanslaşdırmaqdır. Ən qıraqdakı Ultrasonic sensor topun məsafəsini ölçür. Əgər top mərkəzdən uzaqlaşarsa, PID alqoritmi səhvi hesablayır və servo motor vasitəsilə platformanı uyğun istiqamətdə əyir. Bu proses saniyədə dəfələrlə təkrarlanır və nəticədə top yenidən tarazlıq nöqtəsinə qaytarılır.
+                Nəticə olaraq, PID alqoritmi real vaxtda işləyən mexaniki sistemlərdə sabitlik və dəqiqlik yaradır. Doğru parametr seçimi ilə sistem həm sürətli reaksiya verir, həm də titrəmə və gecikmələr minimuma enir. Videoda tarazlaşdırma müddəti 18 saniyə çəkmişdir. Kod daxilindəki müəyyən parametrlərdə dəyişikliklər edərək bu müddəti daha da qısaltmaq mümkündür.
+                PID idarəetməsi robot texnikası, sənaye avtomatikası, dronlar və bir çox digər sahələrdə istifadə olunur. Balancing ball qurğusu isə bu prinsipi vizual və aydın şəkildə nümayiş etdirən klassik bir tətbiqdir.  Videonu Youtube kanalımdan izləyə bilərsiniz.
+            </p>
+            
+            <!-- YouTube Videosunun Yerləşdirildiyi Hissə -->
+            <div class="video-container" style="padding-bottom: 0; height: auto;">
+                <p><a href="https://www.youtube.com/shorts/j3As9SrWEt0" target="_blank">Videonun Youtube linki</a></p>
+                <p>Layihənin kodları: <a href="https://github.com/haciyevnicat/PID-Balancing-Ball" target="_blank">haciyevnicat/PID-Balancing-Ball</a></p>
+            </div>           
+        </section>
+    </main>
+
+</body>
+</html>
